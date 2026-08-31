@@ -1,0 +1,27 @@
+{
+  "name": "typescript-lab",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "typescript",
+    "tic-tac-toe"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "gphilbri@calpoly.edu",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npx nodemon",
+    "build": "npx tsc -b && echo Done",
+    "start": "node -r source-map-support/register dist/index.js",
+    "test": "npx vitest"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "source-map-support": "^0.5.21",
+    "vitest": "^4.1.10"
+  }
+}
